@@ -1,0 +1,115 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD700"
+    android:padding="8dp"
+
+    tools:context="com.example.android.dialatire.MainActivity">
+
+    <ImageView
+        android:id="@+id/business_name_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dialatireheader"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true" />
+
+    <ImageView
+        android:id="@+id/awards_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dialatireawards"
+        android:layout_above="@id/address"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="8dp"/>
+
+    <ImageView
+        android:id="@+id/tires_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tires"
+        android:adjustViewBounds="true"
+        android:layout_below="@id/business_name_image" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/street_name"
+        android:textStyle="bold"
+        android:text="Address:" />
+
+    <TextView
+        android:id="@+id/street_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/city_province"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:text="450 King Street East,"
+        />
+
+    <TextView
+        android:id="@+id/city_province"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:text="Kitchener, ON" />
+
+    <TextView
+        android:id="@+id/hours_of_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/weekday_hours"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:text="Hours of Operation:" />
+
+    <TextView
+        android:id="@+id/weekday_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/weekend_hours"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:text="Mon to Fri: 9:00am - 6:00pm" />
+
+    <TextView
+        android:id="@+id/weekend_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:text="Sat to Sun: 11:00am - 4:00pm" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:text="Dial A Tire Ontario is a locally owned and operated automotive service centre founded in 2013. We strive to deliver quality products to our customers. For auto repairs, wheels, or new and used tires, come see us in person or request a quote online."/>
+
+</RelativeLayout>
